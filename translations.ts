@@ -32,7 +32,7 @@ export const translations = {
       title1: "Optimizing Infrastructure.",
       title2: "Engineering Experience.",
       desc1: "I operate at the intersection of hardware and code. As an IT Administrator, I ensure systems are secure and efficient. As a Developer, I build tools that make those systems usable.",
-      desc2: "Based in Zakho, I solve problems for Rast Private School and private clients, blending technical rigor with creative problem solving.",
+      desc2: "Based in Zakho, I solve problems for private clients as an independent freelancer, blending technical rigor with creative problem solving.",
       comp1Title: "IT Operations",
       comp1Desc: "Network Administration, Hardware Maintenance, System Security.",
       comp2Title: "Frontend Architecture",
