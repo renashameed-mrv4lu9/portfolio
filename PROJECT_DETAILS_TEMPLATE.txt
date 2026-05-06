@@ -1,0 +1,448 @@
+================================================================================
+  PROJECT DETAILS TEMPLATE — Portfolio Modal Data
+================================================================================
+
+Instructions:
+  1. Copy one block below for each project you want to add details to.
+  2. Fill in the fields. Delete any section you don't need (they're all optional).
+  3. Once filled, paste the data into the matching project object in:
+       components/Projects.tsx → projectsData array
+  4. For galleryImages, upload screenshots to a GitHub repo and use raw links:
+       https://raw.githubusercontent.com/YOUR_USERNAME/REPO/main/image.png
+
+================================================================================
+  EXAMPLE (Eris Travel Tech — already in your code)
+================================================================================
+
+{
+    id: 0,
+    title: "Eris Travel Tech Platform",
+    category: "Web Application",
+    description: "Short one-liner shown on the card.",
+    tags: ["React", "Laravel", "AI"],
+    isFeatured: true,
+    image: "https://images.unsplash.com/photo-...",
+
+    // ── Modal Detail Fields ──
+
+    role: "Full-Stack Developer / UI/UX Engineer",
+    platform: "Web Application",
+
+    overview: "A longer paragraph describing the project in detail...",
+
+    features: [
+      { title: "Feature Name", description: "What this feature does." },
+      { title: "Another Feature", description: "Description here." }
+    ],
+
+    techStack: [
+      { category: "Frontend", technologies: ["React.js", "TypeScript", "Vite"] },
+      { category: "Backend", technologies: ["Laravel", "MariaDB"] }
+    ],
+
+    technicalAchievements: "Achievement 1 description.\n\nAchievement 2 description.",
+
+    galleryImages: [
+      "https://raw.githubusercontent.com/username/repo/main/screenshot1.png",
+      "https://raw.githubusercontent.com/username/repo/main/screenshot2.png"
+    ]
+}
+================================================================================
+  YOUR PROJECTS
+================================================================================
+
+────────────────────────────────────────
+PROJECT: Kurdish-Letters App  (id: 1)
+────────────────────────────────────────
+
+role: "Lead Developer"
+platform: "Desktop Application"
+
+overview: "An award-winning, nationally recognized interactive application centered on early language development."
+
+features:
+  - title: "Interactive Learning"
+    description: "Engaging tools designed specifically for early language development."
+  - title: "National Recognition"
+    description: "Achieved award-winning status for its educational impact."
+
+techStack:
+  - category: "Frontend"
+    technologies: ["WinForms", "Bunifu Framework", "Guna Framework"]
+  - category: "Backend"
+    technologies: ["C#", "Entity Framework", "XML"]
+
+technicalAchievements: "Achieved Rwanga Award for best software over IRAQ.\n\nOptimized database queries with Entity Framework to reduce load times by 40%."
+
+galleryImages:
+  - ""
+
+────────────────────────────────────────
+PROJECT: Patient Flow System  (id: 2)
+────────────────────────────────────────
+
+role: "Full-Stack Developer"
+platform: "Enterprise Application"
+
+overview: "An enterprise management system designed to optimize clinic operations and streamline patient flow."
+
+features:
+  - title: "Enterprise Management"
+    description: "Comprehensive tools for managing patient lifecycles."
+  - title: "Flow Optimization"
+    description: "Streamlines daily clinic operations and reduces bottlenecks."
+
+techStack:
+  - category: "Frontend"
+    technologies: ["WinForms", "Bunifu Framework", "Guna Framework", "DevExpress"]
+  - category: "Backend"
+    technologies: ["C#", "Entity Framework", "SQL Server"]
+
+technicalAchievements: "Successfully deployed the system to handle 1,000,000+ data records without experiencing performance degradation."
+
+galleryImages:
+  - ""
+
+────────────────────────────────────────
+PROJECT: Fast-Rest POS  (id: 3)
+────────────────────────────────────────
+
+role: "Full-Stack Developer"
+platform: "Windows POS & Tablet Application"
+
+overview: "A cutting-edge, custom-designed restaurant management system built with modern UI/UX standards. It synchronizes end-user table tablets with a centralized administrative terminal to eliminate manual order-taking and optimize kitchen workflows."
+
+features:
+  - title: "Smart Digital Menu"
+    description: "Interactive table-side ordering with intuitive category filtering, 'Best Seller' highlights, and real-time cart summaries."
+  - title: "Analytical Dashboard"
+    description: "Delivers actionable, data-driven insights including dish popularity trends, traffic analytics, and weekly visitor metrics."
+  - title: "Integrated Messaging & Feedback"
+    description: "Facilitates direct, text-based communication between guests and staff to instantly address specific requests or concerns."
+  - title: "Comprehensive Access Control"
+    description: "Implements strict user roles separating full-access administrative backends from secure, restricted guest interfaces."
+  - title: "Digital Billing Archive"
+    description: "Maintains a secure digital history of all receipts and table orders to streamline daily financial audits and verify accuracy."
+
+techStack:
+  - category: "Frontend"
+    technologies: ["WinForms", "Bunifu Framework", "Guna Framework", "Custom-Designed Components"]
+  - category: "Backend"
+    technologies: ["C#", "Entity Framework", "SQL Server"]
+
+technicalAchievements: "Engineered a synchronized local network workflow that instantly transmits guest orders from distributed table tablets to a centralized staff terminal, significantly reducing wait times."
+
+galleryImages:
+  - ""
+
+────────────────────────────────────────
+PROJECT: School Absence  (id: 4)
+────────────────────────────────────────
+
+role: "Systems Developer"
+platform: "Web Application"
+
+overview: "A digital management system built to automate manual processes, specifically enhancing attendance tracking and reporting accuracy for educational institutions."
+
+features:
+  - title: "Automated Tracking"
+    description: "Replaces manual attendance processes with digital workflows."
+  - title: "Reporting Accuracy"
+    description: "Generates precise and reliable attendance reports."
+
+techStack:
+  - category: "Frontend"
+    technologies: ["HTML", "CSS", "JS"]
+  - category: "Backend"
+    technologies: ["PHP", "MySQL"]
+
+technicalAchievements: ""
+
+galleryImages:
+  - ""
+
+────────────────────────────────────────
+PROJECT: Solar Manager  (id: 5)
+────────────────────────────────────────
+
+role: "Full-Stack Developer"
+platform: "Desktop Application"
+
+overview: "A specialized management and point-of-sale system built specifically for retail businesses that import and sell solar energy products."
+
+features:
+  - title: "Inventory & Import Management"
+    description: "Tracks incoming shipments and manages stock levels for diverse solar products."
+  - title: "Automated Financial Analysis"
+    description: "Calculates and generates comprehensive financial reports with a single click."
+
+techStack:
+  - category: "Frontend"
+    technologies: ["WinForms", "Bunifu Framework", "Guna Framework", "DevExpress"]
+  - category: "Backend"
+    technologies: ["C#", "Entity Framework", "SQL Server"]
+
+technicalAchievements: "Developed a highly praised automated financial analysis module capable of generating comprehensive yearly, monthly, and weekly reports in just a few clicks, resulting in exceptional client satisfaction."
+
+galleryImages:
+  - ""
+
+────────────────────────────────────────
+PROJECT: MedNexus  (id: 6)
+────────────────────────────────────────
+
+role: "Full-Stack Developer"
+platform: "SaaS Platform"
+
+overview: "A secure healthcare SaaS platform featuring real-time analytics and global dashboards to manage medical data efficiently."
+
+features:
+  - title: "Real-Time Analytics"
+    description: "Delivers immediate insights into healthcare metrics."
+  - title: "Global Dashboards"
+    description: "Provides a centralized, secure view of critical data."
+
+techStack:
+  - category: "Frontend"
+    technologies: ["React", "Laravel Echo", "Typescript"]
+  - category: "Backend"
+    technologies: ["Laravel", "Laravel Reverb", "SQLite"]
+
+technicalAchievements: ""
+
+galleryImages:
+  - ""
+
+────────────────────────────────────────
+PROJECT: KurdîClass  (id: 7)
+────────────────────────────────────────
+
+role: "Full-Stack Developer"
+platform: "Educational Platform"
+
+overview: "A comprehensive platform for managing academic curriculum and resources, featuring institutional management tools and support for trilingual RTL layouts."
+
+features:
+  - title: "Curriculum Management"
+    description: "Organizes and manages academic resources effectively."
+  - title: "Trilingual RTL Support"
+    description: "Fully localized interface supporting multiple languages including right-to-left formatting."
+
+techStack:
+  - category: "Frontend"
+    technologies: ["React", "Typescript", "HTML", "CSS"]
+  - category: "Backend"
+    technologies: ["Laravel", "MySQL"]
+
+technicalAchievements: ""
+
+galleryImages:
+  - ""
+
+────────────────────────────────────────
+PROJECT: Starfish Co. Website (id: 8)
+────────────────────────────────────────
+
+role: "Web Developer / Designer"
+platform: "Corporate Website"
+
+overview: "A fully custom-designed corporate website built to effectively showcase the company's diverse product catalog, mission, and vision."
+
+features:
+  - title: "Custom Theme Design"
+    description: "A tailored, from-scratch visual identity built to match corporate branding."
+  - title: "Content Management"
+    description: "Streamlined administrative dashboard for easy updates to products and company information."
+
+techStack:
+  - category: "Frontend"
+    technologies: ["HTML", "CSS", "JavaScript"]
+  - category: "Backend / CMS"
+    technologies: ["WordPress", "PHP"]
+
+technicalAchievements: ""
+
+galleryImages:
+  - ""
+
+────────────────────────────────────────
+PROJECT: Hospital DB System  (id: 9)
+────────────────────────────────────────
+
+role: "Database Architect"
+platform: "Database Architecture"
+
+overview: "A comprehensive relational database architecture designed from the ground up to securely handle hospital administration, patient records, and operational data flow."
+
+features:
+  - title: "Advanced Schema Design"
+    description: "Engineered utilizing detailed Entity-Relationship (ER) and Enhanced Entity-Relationship (EER) diagrams."
+  - title: "Data Integrity & Security"
+    description: "Structured to ensure the reliable, safe storage and retrieval of sensitive medical records."
+
+techStack:
+  - category: "Database Design"
+    technologies: ["ER Diagrams", "EER Diagrams"]
+  - category: "Database Management"
+    technologies: ["Microsoft SQL Server"]
+
+technicalAchievements: ""
+
+galleryImages:
+  - ""
+
+────────────────────────────────────────
+PROJECT: Election DB System  (id: 10)
+────────────────────────────────────────
+
+role: "Database Architect"
+platform: "Database Architecture"
+
+overview: "A highly secure and robust relational database schema designed specifically for managing election records, voter registration data, and complex voting statistics."
+
+features:
+  - title: "Complex Entity Mapping"
+    description: "Structured relationships utilizing ER and EER diagrams to ensure accurate voter data mapping."
+  - title: "Statistical Optimization"
+    description: "Backend architecture designed to support rapid querying for real-time election analytics."
+
+techStack:
+  - category: "Database Design"
+    technologies: ["ER Diagrams", "EER Diagrams"]
+  - category: "Database Management"
+    technologies: ["Microsoft SQL Server"]
+
+technicalAchievements: ""
+
+galleryImages:
+  - ""
+
+────────────────────────────────────────
+PROJECT: Dormitory Management  (id: 11)
+────────────────────────────────────────
+
+role: "Database Architect"
+platform: "Database Architecture"
+
+overview: "A foundational relational database system engineered to efficiently structure data for dormitory room assignments, student records, and facility operations."
+
+features:
+  - title: "Facility Logic Modeling"
+    description: "Detailed mapping of student-to-facility relationships using formal ER/EER methodologies."
+  - title: "Centralized Storage"
+    description: "A secure MS SQL backend optimized for seamless data retrieval and administrative updates."
+
+techStack:
+  - category: "Database Design"
+    technologies: ["ER Diagrams", "EER Diagrams"]
+  - category: "Database Management"
+    technologies: ["Microsoft SQL Server"]
+
+technicalAchievements: ""
+
+galleryImages:
+  - ""
+
+────────────────────────────────────────
+PROJECT: Teacher Records Hub  (id: 12)
+────────────────────────────────────────
+
+role: "Full-Stack Web Developer"
+platform: "Web Application"
+
+overview: "A comprehensive web-based administrative portal designed to streamline the management of educator profiles, academic records, and institutional documentation."
+
+features:
+  - title: "Centralized Record Keeping"
+    description: "Provides a secure, easily accessible digital repository for all teaching staff data."
+  - title: "Administrative Automation"
+    description: "Replaces tedious manual paperwork with efficient, automated digital workflows."
+
+techStack:
+  - category: "Frontend"
+    technologies: ["HTML", "CSS", "JavaScript", "Bootstrap"]
+  - category: "Backend"
+    technologies: ["PHP"]
+
+technicalAchievements: "Significantly reduced the daily administrative workload for teaching staff by digitizing and automating previously time-consuming manual record-keeping processes."
+
+galleryImages:
+  - ""
+
+────────────────────────────────────────
+PROJECT: Shopping Management  (id: 13)
+────────────────────────────────────────
+
+role: "Software Developer"
+platform: "Desktop Application"
+
+overview: "An intuitive desktop application engineered to oversee retail operations, manage complex inventory lifecycles, and process daily transactions seamlessly."
+
+features:
+  - title: "Inventory Tracking"
+    description: "Monitors stock levels, product variations, and resupply needs in real time."
+  - title: "Transaction Processing"
+    description: "Delivers a smooth, reliable checkout experience for daily retail operations."
+
+techStack:
+  - category: "Frontend"
+    technologies: ["WinForms", "Bunifu Framework", "Guna Framework"]
+  - category: "Backend"
+    technologies: ["C#", "Entity Framework", "SQL Server"]
+
+technicalAchievements: ""
+
+galleryImages:
+  - ""
+
+────────────────────────────────────────
+PROJECT: Gym DB System  (id: 14)
+────────────────────────────────────────
+
+role: "Full-Stack Developer"
+platform: "Desktop Application"
+
+overview: "A robust desktop management platform engineered specifically for fitness centers to handle client memberships, track billing, and monitor facility usage."
+
+features:
+  - title: "Membership Management"
+    description: "Organizes client profiles, tracks attendance, and monitors active subscription statuses."
+  - title: "Financial Tracking"
+    description: "Provides oversight for facility billing, payment histories, and revenue reporting."
+
+techStack:
+  - category: "Frontend"
+    technologies: ["WinForms", "Bunifu Framework", "Guna Framework", "DevExpress"]
+  - category: "Backend"
+    technologies: ["C#", "Entity Framework", "SQL Server"]
+
+technicalAchievements: ""
+
+galleryImages:
+  - ""
+
+────────────────────────────────────────
+PROJECT: Tic-Tac-Toe Android App (id: 15)
+────────────────────────────────────────
+
+role: "Mobile App Developer"
+platform: "Android Application"
+
+overview: "An engaging native Android application that brings a classic gaming experience to modern mobile devices with a clean, highly responsive user interface."
+
+features:
+  - title: "Native Mobile Performance"
+    description: "Delivers smooth, fast-paced gameplay optimized specifically for the Android ecosystem."
+  - title: "Responsive UI Design"
+    description: "Features a modern layout that adapts flawlessly across various smartphone and tablet screen sizes."
+
+techStack:
+  - category: "UI Layout"
+    technologies: ["XML"]
+  - category: "Application Logic"
+    technologies: ["Kotlin"]
+
+technicalAchievements: ""
+
+galleryImages:
+  - ""

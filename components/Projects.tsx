@@ -1,157 +1,24 @@
 import React, { useRef, useState } from 'react';
 import { motion, useMotionTemplate, useMotionValue } from 'framer-motion';
-import { ExternalLink, Trophy, ArrowUpRight } from 'lucide-react';
+import { ExternalLink, Trophy, ArrowUpRight, ArrowRight } from 'lucide-react';
 import { Project } from '../types';
 import { useLanguage } from '../LanguageContext';
+import { projectsData } from '../projectsData';
 
-const projectsData: Project[] = [
-  {
-    id: 1,
-    title: "Kurdish-Letters App",
-    category: "Mobile / Education",
-    description: "Award-winning educational tool for children with learning disabilities. Developer of Rwanga Awards 2024 Winner Software.",
-    tags: ["Mobile", "Award Winner"],
-    isFeatured: true,
-    image: "https://images.unsplash.com/photo-1596464716127-f9a829be9efc?q=80&w=2000&auto=format&fit=crop"
-  },
-  {
-    id: 2,
-    title: "Patient Flow System",
-    category: "Healthcare / DB",
-    description: "Hospital management system designed to optimize patient intake and discharge.",
-    tags: ["Database", "Optimization"],
-    isFeatured: false,
-    image: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?q=80&w=2000&auto=format&fit=crop"
-  },
-  {
-    id: 3,
-    title: "Fast-Rest POS",
-    category: "Hospitality",
-    description: "High-speed point of sale system for fast-food environments.",
-    tags: ["POS", "Retail"],
-    isFeatured: false,
-    image: "https://images.unsplash.com/photo-1556740758-90de374c12ad?q=80&w=2000&auto=format&fit=crop"
-  },
-  {
-    id: 4,
-    title: "School Absence",
-    category: "Admin Tool",
-    description: "Automated tracking system for student attendance and reports.",
-    tags: ["Admin", "Automation"],
-    isFeatured: false,
-    image: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=2000&auto=format&fit=crop"
-  },
-  {
-    id: 5,
-    title: "Solar Manager",
-    category: "IoT / Green Tech",
-    description: "System for monitoring solar energy output and consumption.",
-    tags: ["IoT", "Green Tech"],
-    isFeatured: false,
-    image: "https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=2000&auto=format&fit=crop"
-  },
-  {
-    id: 6,
-    title: "MedNexus",
-    category: "Healthcare SaaS",
-    description: "Lead Full-Stack Architect. Global dashboard for real-time biological supply chain visualization. Features zero-latency state sync, live hospital tracking, and enterprise-grade security.",
-    tags: ["React 19", "TypeScript", "Laravel"],
-    isFeatured: false,
-    image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=2000&auto=format&fit=crop"
-  },
-  {
-    id: 7,
-    title: "KurdîClass",
-    category: "EdTech Platform",
-    description: "Full-Stack Developer & UI/UX Designer. Comprehensive educational portal for the Kurdistan Region. Features flawless RTL architecture, seamless multi-language toggling, and premium dark-mode UI.",
-    tags: ["Full-Stack", "UI/UX", "RTL"],
-    isFeatured: false,
-    image: "https://images.unsplash.com/photo-1501504905252-473c47e087f8?q=80&w=2000&auto=format&fit=crop"
-  },
-  {
-    id: 8,
-    title: "Starfish Co.",
-    category: "Commercial E-Commerce",
-    description: "WordPress Architect & UI/UX Designer. High-performance corporate platform managing multiple sub-brands. Features complex nested navigation, high-conversion UI, and optimized media integration.",
-    tags: ["WordPress", "UI/UX", "E-Commerce"],
-    isFeatured: false,
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2000&auto=format&fit=crop"
-  },
-  {
-    id: 9,
-    title: "Hospital DB System",
-    category: "Healthcare Infrastructure",
-    description: "Secure, centralized database architecture for patient registries and medical inventories. Engineered for strict data integrity, complex relational mapping, and enterprise-grade role-based access control.",
-    tags: ["SQL", "Relational DB", "Backend"],
-    isFeatured: false,
-    image: "https://images.unsplash.com/photo-1551076805-e18690c5e45e?q=80&w=2000&auto=format&fit=crop"
-  },
-  {
-    id: 10,
-    title: "Election DB System",
-    category: "Civic & Security Systems",
-    description: "High-security relational database handling voter registration and real-time tabulation. Focuses on absolute data immutability, cryptographic audit trails, and high-concurrency transaction management.",
-    tags: ["Secure SQL", "Cryptography", "Backend"],
-    isFeatured: false,
-    image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?q=80&w=2000&auto=format&fit=crop"
-  },
-  {
-    id: 11,
-    title: "Dormitory Management",
-    category: "Higher Education Logistics",
-    description: "Institutional logistics platform managing student housing and capacity planning. Features automated room assignment logic, occupancy analytics, and highly structured data models for large-scale operations.",
-    tags: ["Full-Stack", "SQL", "Logistics"],
-    isFeatured: false,
-    image: "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=2000&auto=format&fit=crop"
-  },
-  {
-    id: 12,
-    title: "Teacher Records Hub",
-    category: "Educational Admin",
-    description: "Digital administrative hub securing faculty credentials and performance metrics. Delivers secure document indexing and high-speed search algorithms via a streamlined, optimized UI.",
-    tags: ["Web System", "Database", "Frontend"],
-    isFeatured: false,
-    image: "https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=2000&auto=format&fit=crop"
-  },
-  {
-    id: 13,
-    title: "Shopping Management",
-    category: "Commercial E-Commerce",
-    description: "Robust commercial backend processing product lifecycles and secure checkouts. Highlights include real-time inventory state synchronization and complex relational mapping for financial data.",
-    tags: ["Full-Stack", "Transactional DB", "E-Commerce"],
-    isFeatured: false,
-    image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=2000&auto=format&fit=crop"
-  },
-  {
-    id: 14,
-    title: "Gym DB System",
-    category: "Facility Management",
-    description: "Scalable membership lifecycle platform tracking active subscriptions and access control. Built with automated status flagging, renewal logic, and a highly scalable schema design.",
-    tags: ["Relational DB", "Web Interface", "Schema Design"],
-    isFeatured: false,
-    image: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=2000&auto=format&fit=crop"
-  },
-  {
-    id: 15,
-    title: "Tic-Tac-Toe AI",
-    category: "Mobile App (Android)",
-    description: "Highly responsive Android application demonstrating fundamental state management. Implements complex min-max algorithms for an unbeatable AI opponent with efficient local state handling.",
-    tags: ["Android SDK", "Java/Kotlin", "Mobile UI"],
-    isFeatured: false,
-    image: "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?q=80&w=2000&auto=format&fit=crop"
-  }
-];
-
-const Projects: React.FC = () => {
+const Projects: React.FC<{ onOpenProject: (project: Project) => void }> = ({ onOpenProject }) => {
   const { t, lang } = useLanguage();
   const isRtl = lang === 'ar' || lang === 'ku';
 
-  const projects = projectsData.map((project, index) => ({
-    ...project,
-    title: t(`projects.items.p${index + 1}.title`),
-    category: t(`projects.items.p${index + 1}.category`),
-    description: t(`projects.items.p${index + 1}.desc`)
-  }));
+  const projects = projectsData.map((project) => {
+    if (project.id === 0) return project; // Eris project uses raw data for now
+    
+    return {
+      ...project,
+      title: t(`projects.items.p${project.id}.title`) || project.title,
+      category: t(`projects.items.p${project.id}.category`) || project.category,
+      description: t(`projects.items.p${project.id}.desc`) || project.description
+    };
+  });
 
   return (
     <motion.section 
@@ -187,15 +54,17 @@ const Projects: React.FC = () => {
                         className={index === 0 ? "md:col-span-2 lg:col-span-2" : ""}
                         isRtl={isRtl}
                         t={t}
+                        onViewDetails={() => onOpenProject(project)}
                     />
                 ))}
             </div>
         </div>
+
     </motion.section>
   );
 };
 
-const ProjectCard: React.FC<{ project: Project; className?: string; isRtl: boolean; t: any }> = ({ project, className, isRtl, t }) => {
+const ProjectCard: React.FC<{ project: Project; className?: string; isRtl: boolean; t: any; onViewDetails: () => void }> = ({ project, className, isRtl, t, onViewDetails }) => {
     let mouseX = useMotionValue(0);
     let mouseY = useMotionValue(0);
 
@@ -255,13 +124,21 @@ const ProjectCard: React.FC<{ project: Project; className?: string; isRtl: boole
                         {project.description}
                     </p>
                     
-                    <div className="flex gap-2 flex-wrap">
+                    <div className="flex gap-2 flex-wrap mb-6">
                          {project.tags.map(tag => (
                              <span key={tag} className="text-[10px] uppercase tracking-wider text-gray-500 border border-gray-800 px-2 py-1">
                                  {tag}
                              </span>
                          ))}
                     </div>
+                    
+                    <button 
+                        onClick={(e) => { e.stopPropagation(); onViewDetails(); }}
+                        className="flex items-center gap-2 text-sm font-medium text-void bg-acid px-6 py-2.5 rounded-sm hover:bg-white transition-colors duration-300 shadow-[0_0_15px_rgba(204,243,129,0.3)] hover:shadow-[0_0_25px_rgba(204,243,129,0.5)] active:scale-95"
+                    >
+                        {t('projects.viewDetails') || 'View Details'}
+                        <ArrowRight className={`w-4 h-4 ${isRtl ? 'rotate-180' : ''}`} />
+                    </button>
                 </div>
             </div>
         </div>

@@ -89,6 +89,7 @@ export const translations = {
       desc: "A curated collection of deployed software solutions and system architectures.",
       portfolio: "Portfolio 2024-25",
       winner: "WINNER",
+      viewDetails: "View Details",
       items: {
         p1: { title: "Kurdish-Letters App", category: "Mobile / Education", desc: "Award-winning educational tool for children with learning disabilities. Developer of Rwanga Awards 2024 Winner Software." },
         p2: { title: "Patient Flow System", category: "Healthcare / DB", desc: "Hospital management system designed to optimize patient intake and discharge." },
@@ -223,6 +224,7 @@ export const translations = {
       desc: "مجموعة منتقاة من الحلول البرمجية المنشورة وهياكل الأنظمة.",
       portfolio: "محفظة 2024-25",
       winner: "فائز",
+      viewDetails: "عرض التفاصيل",
       items: {
         p1: { title: "تطبيق الحروف الكردية", category: "موبايل / تعليم", desc: "أداة تعليمية حائزة على جوائز للأطفال الذين يعانون من صعوبات التعلم. مطور البرنامج الفائز بجوائز روانگە 2024." },
         p2: { title: "نظام تدفق المرضى", category: "رعاية صحية / قواعد بيانات", desc: "نظام إدارة المستشفيات مصمم لتحسين دخول وخروج المرضى." },
@@ -357,6 +359,7 @@ export const translations = {
       desc: "کۆمەڵەک ژ چارەسەریێن نەرمەکاڵا و ئەندازیاریا سیستەمی.",
       portfolio: "پۆرتفۆلیۆ 2024-25",
       winner: "سەرکەفتی",
+      viewDetails: "دیتنا وردەکارییان",
       items: {
         p1: { title: "ئەپێ پیتێن کوردی", category: "مۆبایل / پەروەردە", desc: "ئامیرەکێ پەروەردەیی یێ خەڵاتکری بۆ زارۆکێن خودان پێدڤیێن تایبەت. سەرکەفتیێ خەڵاتێ ڕوانگە 2024." },
         p2: { title: "سیستەمێ چوون و هاتنا نەخۆشان", category: "تەندروستی / داتابەیس", desc: "سیستەمێ رێڤەبرنا نەخۆشخانێ بۆ باشترکرنا وەرگرتن و دەرکەفتنا نەخۆشی." },
