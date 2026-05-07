@@ -68,7 +68,7 @@ const Footer: React.FC = () => {
              <h3 className="text-xl font-bold mb-2 text-void relative z-10">{t('footer.haveProject')}</h3>
              <p className="text-sm text-void/70 mb-8 relative z-10 font-medium">{t('footer.discuss')}</p>
              
-             <a href="mailto:renassindy78@gmail.com" className="w-full py-4 bg-void text-white text-center font-bold uppercase text-xs tracking-wider hover:bg-white hover:text-void transition-all relative z-10 shadow-xl">
+             <a href="https://wa.me/9647500140294" target="_blank" rel="noopener noreferrer" className="w-full py-4 bg-void text-white text-center font-bold uppercase text-xs tracking-wider hover:bg-white hover:text-void transition-all relative z-10 shadow-xl">
                 {t('footer.startConv')}
              </a>
         </div>
