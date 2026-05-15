@@ -10,13 +10,23 @@ const Projects: React.FC<{ onOpenProject: (project: Project) => void }> = ({ onO
   const isRtl = lang === 'ar' || lang === 'ku';
 
   const projects = projectsData.map((project) => {
-    if (project.id === 0) return project; // Eris project uses raw data for now
+    // Override unsplash placeholder images with a nice 'Coming Soon' placeholder
+    const placeholderUrl = "https://placehold.co/1600x900/111827/a3e635?text=Project+Screenshot%0AComing+Soon&font=Montserrat";
+    const overrideImage = (url?: string) => url?.includes('unsplash.com') ? placeholderUrl : url;
+    
+    const baseProject = {
+      ...project,
+      image: overrideImage(project.image) || project.image,
+      galleryImages: project.galleryImages?.map(overrideImage)
+    };
+
+    if (baseProject.id === 0) return baseProject; // Eris project uses raw data for now
     
     return {
-      ...project,
-      title: t(`projects.items.p${project.id}.title`) || project.title,
-      category: t(`projects.items.p${project.id}.category`) || project.category,
-      description: t(`projects.items.p${project.id}.desc`) || project.description
+      ...baseProject,
+      title: t(`projects.items.p${baseProject.id}.title`) || baseProject.title,
+      category: t(`projects.items.p${baseProject.id}.category`) || baseProject.category,
+      description: t(`projects.items.p${baseProject.id}.desc`) || baseProject.description
     };
   });
 
